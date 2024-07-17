@@ -24,7 +24,7 @@ function App() {
         <Aboutme />
 
         <div className="projectsshowcase" id='projects'>
-          <p>Project Showcase</p>
+          <p>Projects Showcase</p>
         </div>
 
         <Project1 />
