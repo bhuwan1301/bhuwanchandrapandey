@@ -1,0 +1,81 @@
+.projectholder{
+    margin: 10vh 5vh;
+    background-color: rgb(50, 50, 50);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+    border-radius: 15px;
+    /* transform: translateX(-50%); */
+    transition: all linear 0.5s;
+}
+
+.projectholder:hover{
+    transform: none;
+}
+
+.projectholder > h2{
+    font-size: 1.5vw;
+}
+.projectholder>p{
+    font-size: 1vw;
+}
+
+.visitptojectbutton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.visitptojectbutton > a{
+    font-size: 1vw;
+    color: white;
+    text-decoration: none;
+    background-color: rgb(87, 87, 87);
+    border-radius: 15px;
+    padding: 10px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 3vh;
+}
+
+.visitptojectbutton > a:active{
+    background-color: rgb(41, 41, 41);
+}
+
+.photos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.photos > img{
+    width: 25%;
+    border: 2px dashed white;
+}
+
+
+@media screen and (max-width: 992px){
+    .projectholder > h2{
+        font-size: 25px;
+    }
+    .projectholder > p{
+        font-size: 20px;
+    }
+    .visitptojectbutton > a{
+        font-size: 20px;
+    }
+    .photos > img{
+        width: 31.5%;
+    }
+}
+@media screen and (max-width: 600px){
+    .projectholder > p{
+        font-size: 15px;
+    }
+    .visitptojectbutton > a{
+        font-size: 15px;
+    }
+    .photos > img{
+        width: 80%;
+        margin-bottom: 10px;
+    }
+}

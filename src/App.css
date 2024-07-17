@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
+
+.maincontainer {
+    display: flex;
+}
+
+.nav {
+    width: 3%;
+    z-index: 1;
+}
+
+.nav>nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(63, 63, 63);
+    height: 100%;
+    position: fixed;
+    padding: 20px 0;
+}
+
+.nav>nav>a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9vw;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    border-radius: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    /* Added a shadow to the navbar */
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    /* Added a subtle border */
+}
+
+.nav>nav>a:hover {
+    background-color: rgb(85, 85, 85);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.notnav {
+    width: 100%;
+    /* margin-left: 7%; */
+}
+
+.projectsshowcase{
+    margin: 5vh;
+    text-align: center;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    font-family:"Hind", sans-serif;
+}
+
+@media screen and (max-width: 992px) {
+    .nav {
+        display: none;
+    }
+
+    .notnav {
+        margin-left: 0;
+    }
+}

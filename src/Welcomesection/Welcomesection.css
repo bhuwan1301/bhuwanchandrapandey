@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Hind:wght@300;400;500;600;700&display=swap');
+
+.welcome {
+    background-image: linear-gradient(to bottom left, rgb(222, 222, 222), rgb(60, 60, 60), rgb(20, 20, 20));
+    text-align: center;
+    margin-top: 10vh;
+    padding: 15vh 2vh;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+}
+
+.welcome>h1 {
+    font-size: 7vw;
+    font-family: "Anton SC", sans-serif;
+    margin-top: 0;
+    margin-bottom: 5vh;
+}
+
+
+.welcome>h2 {
+    font-size: 2.25vw;
+    font-family: "Hind", sans-serif;
+}
+
+.welcome>h1,
+.welcome>h2 {
+    text-shadow: 10px 10px 8px black;
+    color: rgb(170, 170, 170);
+    animation: fade-in 1.5s linear 1 forwards;
+    transition: all 0.3s linear;
+}
+
+.welcome>h1:hover,
+.welcome>h2:hover {
+    text-shadow: 10px 10px 8px rgb(40, 40, 40), 0 0 5px rgba(255, 255, 255, 0.6), 0 0 7px rgba(255, 255, 255, 0.4);
+    color: white;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        /* transform: scale(0.8); */
+    }
+
+    to {
+        opacity: 1;
+        /* transform: scale(1); */
+    }
+}
+
+/* for tablets */
+@media screen and (max-width: 992px) {
+    .welcome>h1 {
+        font-size: 70px;
+    }
+
+    .welcome>h2 {
+        font-size: 35px;
+    }
+}
+
+/* for phones */
+@media screen and (max-width: 600px) {
+    .welcome>h1 {
+        font-size: 45px;
+    }
+
+    .welcome>h2 {
+        font-size: 20px;
+    }
+
+}
