@@ -48,8 +48,9 @@
 }
 
 .photos > img{
-    width: 25%;
-    border: 2px dashed white;
+    width: 20%;
+    border: 2px solid white;
+    /* aspect-ratio: 1 / 2.1; */
 }
 
 

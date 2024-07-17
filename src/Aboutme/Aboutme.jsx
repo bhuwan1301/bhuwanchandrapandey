@@ -1,15 +1,35 @@
 import './Aboutme.css'
+import { useState } from 'react'; 
 import mypic from '../assets/mypic.jpg'
 
 function Aboutme() {
+    // State to track if the container is flipped
+    const [isFlipped, setIsFlipped] = useState(false);
+
+    // Function to handle the click event on the button
+    const handleFlip = () => {
+        setIsFlipped(!isFlipped);
+    };
+
     return (
         <>
-            <div className="aboutmecontainer" id='about'>
-                <div className="aboutme">
-                    <h1>About me</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero beatae veritatis obcaecati alias deleniti voluptate animi repellat earum incidunt consequuntur, corrupti qui non ab ad, ullam rem officia quibusdam reiciendis.</p>
-                </div>
-
+            <div className={`aboutmecontainer ${isFlipped ? 'flipped' : ''}`} id='about'>
+                {!isFlipped ? (
+                    <>
+                    <div className="aboutme">
+                        <h1>About me</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero beatae veritatis obcaecati alias deleniti voluptate animi repellat earum incidunt consequuntur, corrupti qui non ab ad, ullam rem officia quibusdam reiciendis.</p>
+                        <button onClick={handleFlip}>Read More</button>
+                    </div>
+                    {/* <img src={mypic} alt="mypic" /> */}
+                    </>
+                ) : (
+                    <div className="aboutme">
+                        <h1>Some more content</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, sit? Non dolore nisi, nihil dolores quod minus consequatur repellendus molestias quisquam. Debitis eveniet rem sed molestias est assumenda voluptates a possimus quod ut nesciunt ratione, quos vero soluta porro quia illo accusamus magni. Incidunt sequi, assumenda error suscipit accusantium provident.</p>
+                        <button onClick={handleFlip}>Read Less</button>
+                    </div>
+                )}
                 <img src={mypic} alt="mypic" />
             </div>
 
