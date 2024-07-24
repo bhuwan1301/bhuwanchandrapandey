@@ -2,11 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Hind:wght@300;400;500;600;700&display=swap');
 
 .welcome {
-    background-image: linear-gradient(to bottom left, rgb(222, 222, 222), rgb(60, 60, 60), rgb(20, 20, 20));
+    /* background-image: linear-gradient(to bottom, rgba(0, 0, 139, 0.7), rgba(0, 0, 91, 0.9), rgba(0, 0, 56, 0.9)); */
+    background: linear-gradient(135deg, #9C27B0, #F50057);
+    background-color: #1E88E5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
     text-align: center;
     margin-top: 10vh;
     padding: 15vh 2vh;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+    animation: fade-in 1.5s linear 1 forwards;
 }
 
 .welcome>h1 {
@@ -25,8 +28,8 @@
 .welcome>h1,
 .welcome>h2 {
     text-shadow: 10px 10px 8px black;
-    color: rgb(170, 170, 170);
-    animation: fade-in 1.5s linear 1 forwards;
+    color: #EDE7F6;
+    /* animation: fade-in 1.5s linear 1 forwards; */
     transition: all 0.3s linear;
 }
 
@@ -52,10 +55,12 @@
 @media screen and (max-width: 992px) {
     .welcome>h1 {
         font-size: 70px;
+
     }
 
     .welcome>h2 {
         font-size: 35px;
+
     }
 }
 

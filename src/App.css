@@ -5,7 +5,7 @@
 }
 
 .nav {
-    width: 3%;
+    width: 5%;
     z-index: 1;
 }
 
@@ -14,7 +14,7 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-color: rgb(63, 63, 63);
+    background-color: #FF5722    ;
     height: 100%;
     position: fixed;
     padding: 20px 0;
@@ -25,7 +25,7 @@
     text-decoration: none;
     font-size: 0.9vw;
     padding: 10px 0;
-    width: 100%;
+    width: 98%;
     text-align: center;
     transition: all 0.3s ease-in-out;
     border-radius: 15px;
@@ -37,7 +37,7 @@
 }
 
 .nav>nav>a:hover {
-    background-color: rgb(85, 85, 85);
+    background-color: #FFC107 ;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 

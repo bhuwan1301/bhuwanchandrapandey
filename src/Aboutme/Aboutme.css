@@ -6,7 +6,7 @@
     margin-right: 5vh;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(50, 50, 50);
+    background-color: #9C27B0 ;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
     border-radius: 15px;
@@ -27,7 +27,7 @@
 
 .aboutme{
     width: 60%;
-    color: rgb(220, 220, 220);
+    color: #EDE7F6;
 }
 
 .aboutme > h1{
@@ -35,6 +35,15 @@
 }
 .aboutme > p{
     font-size: 1vw;
+}
+.aboutme > button{
+    background-color: #F50057;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+.aboutme > button:active{
+    background-color: #82002e;
 }
 
 .aboutmecontainer > img{
@@ -46,9 +55,10 @@
 
 .detailsSlide{
     display: flex;
+    color: #EDE7F6;
     justify-content: space-evenly;
     flex-wrap: nowrap;
-    background-color: rgb(50, 50, 50);
+    background-color: #9C27B0 ;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
     border-radius: 15px;
     margin-bottom: 10vh;
