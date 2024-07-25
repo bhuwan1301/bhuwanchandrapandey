@@ -1,7 +1,7 @@
 .projectholder{
-    color: white;
+    /* color: white; */
     margin: 10vh 5vh;
-    background-color: #865dffa1;
+    /* background-color: #865dffa1; */
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
     border-radius: 15px;
@@ -30,16 +30,12 @@
     font-size: 1vw;
     color: white;
     text-decoration: none;
-    background-color: #E384FF;
+    /* background-color: #E384FF; */
     border-radius: 15px;
     padding: 10px;
     font-weight: 600;
     text-align: center;
     margin-bottom: 3vh;
-}
-
-.visitptojectbutton > a:active{
-    background-color: #9900c8;
 }
 
 .photos{

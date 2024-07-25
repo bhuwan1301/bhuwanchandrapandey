@@ -55,10 +55,10 @@
 
 .detailsSlide{
     display: flex;
-    color: #EDE7F6;
+    color: #E8F9FD;
     justify-content: space-evenly;
     flex-wrap: nowrap;
-    background-color: #393e46c3 ;
+    background-color: #cf0a0acb ;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
     border-radius: 15px;
     margin-bottom: 10vh;

@@ -1,0 +1,12 @@
+#project1{
+    background-color: #40534C;
+    color: #D6BD98;
+}
+
+#project1 a{
+    background-color: #FF8225;
+}
+
+#project1 a:active{
+    background-color: #854413;
+}
