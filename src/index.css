@@ -20,8 +20,8 @@ html{
 }
 
 body {
-  background: url('../public/bg1.svg');
-  background-size: cover;
+  background: url('../public/bg4.svg');
+  background-repeat: repeat;
   overflow-x: hidden;
   margin: 0;
   padding: 0;

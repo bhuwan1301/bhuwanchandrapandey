@@ -6,7 +6,7 @@
     margin-right: 5vh;
     justify-content: space-between;
     align-items: center;
-    background-color: #9C27B0 ;
+    background-color: #393e46c3;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
     border-radius: 15px;
@@ -37,13 +37,13 @@
     font-size: 1vw;
 }
 .aboutme > button{
-    background-color: #F50057;
+    background-color: #00ADB5;
     border: none;
     padding: 10px;
     border-radius: 10px;
 }
 .aboutme > button:active{
-    background-color: #82002e;
+    background-color: #006267;
 }
 
 .aboutmecontainer > img{
@@ -58,7 +58,7 @@
     color: #EDE7F6;
     justify-content: space-evenly;
     flex-wrap: nowrap;
-    background-color: #9C27B0 ;
+    background-color: #393e46c3 ;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
     border-radius: 15px;
     margin-bottom: 10vh;

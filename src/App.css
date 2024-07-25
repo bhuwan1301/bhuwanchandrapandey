@@ -14,7 +14,7 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-color: #FF5722    ;
+    background-color: #0D7377    ;
     height: 100%;
     position: fixed;
     padding: 20px 0;
@@ -37,7 +37,8 @@
 }
 
 .nav>nav>a:hover {
-    background-color: #FFC107 ;
+    color: black;
+    background-color: #14FFEC ;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
