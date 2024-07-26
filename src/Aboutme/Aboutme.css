@@ -13,16 +13,6 @@
     /* transform: perspective(1000px) rotateX(10deg) rotateY(10deg); */
     transition: all linear 0.5s;
     flex-wrap: wrap;
-    /* Add 3D flipping effect */
-    perspective: 1000px;
-    position: relative;
-    transform-style: preserve-3d;
-    transition: transform 1.5s;
-}
-
-.aboutmecontainer.flipped {
-    transform: rotateY(360deg);
-    /* backface-visibility: visible; */
 }
 
 .aboutme{
@@ -66,12 +56,12 @@
     margin-right: 5vh;
     padding: 20px;
     /* transform: perspective(1000px) rotateX(-10deg) rotateY(-10deg); */
-    transform: translateX(-25%);
+    /* transform: translateX(-25%); */
     transition: all linear 0.5s;
 }
 
 .detailsSlide:hover{
-    transform: none;
+    /* transform: none; */
 }
 
 .detailsSlideContainer{

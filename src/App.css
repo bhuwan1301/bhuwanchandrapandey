@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
 
+.scrollindicator{
+    background-color: lime;
+    height: 1vh;
+    z-index: 5;
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform-origin: 0;
+    box-shadow: 0 0 20px white;
+}
+
 .maincontainer {
     display: flex;
 }
