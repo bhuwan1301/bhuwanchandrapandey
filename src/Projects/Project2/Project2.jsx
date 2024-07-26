@@ -11,9 +11,9 @@ export default function Project1() {
             <motion.div
                 className="projectholder"
                 id='project2'
-                initial={{ opacity: 0, scale: 0.9 }}
+                initial={{  scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 0.9 }}
+                exit={{  scale: 0.9 }}
                 transition={{ duration: 0.5 }}
             >
                 <h2>Kaam Kaaj</h2>
