@@ -10,3 +10,18 @@
 #project2 a:active{
     background-color: #854413;
 }
+
+.showgallery button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    background-color: grey;
+    margin-bottom: 1vh;
+}
+
+.showgallery button:active{
+    background-color: rgb(83, 83, 83);
+}

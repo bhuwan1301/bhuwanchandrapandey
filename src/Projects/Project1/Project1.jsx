@@ -4,17 +4,24 @@ import note from './note.png'
 import sign from './signIn.png'
 import './project1.css'
 import { motion } from 'framer-motion'
+import { useState } from 'react'
 
 
 export default function Project1() {
+    const [showgallery, setShowgallery] = useState(false)
+
+    function handleShowgallery() {
+        setShowgallery(!showgallery);
+    }
+
     return (
         <div>
             <motion.div
                 className="projectholder"
                 id='project1'
-                initial={{  scale: 0.9 }}
+                initial={{ scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
-                exit={{  scale: 0.9 }}
+                exit={{ scale: 0.9 }}
                 transition={{ duration: 0.5 }}
             >
                 <h2>NoteDown</h2>
@@ -26,7 +33,18 @@ export default function Project1() {
                     <a href="https://github.com/bhuwan1301/NoteDown/releases" target='_blank'>Visit Project</a>
                 </div>
 
-                <div className="photos">
+                <div className="showgallery">
+                    <button onClick={handleShowgallery}>
+                        Show Gallery
+                    </button>
+                </div>
+
+                <div
+                    className="photos"
+                    style={{
+                        display: showgallery ? 'flex' : 'none',
+                    }}
+                >
                     <img src={sign} alt="Home page" />
                     <img src={homepic} alt="Home page" />
                     <img src={note} alt="Home page" />

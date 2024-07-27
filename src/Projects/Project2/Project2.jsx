@@ -4,16 +4,23 @@ import pic2 from './pic2.jpg'
 import pic3 from './pic3.jpg'
 import './project2.css'
 import { motion } from 'framer-motion'
+import { useState } from 'react'
 
 export default function Project1() {
+    const [showgallery, setShowgallery] = useState(false)
+
+    function handleShowgallery() {
+        setShowgallery(!showgallery);
+    }
+
     return (
         <div>
             <motion.div
                 className="projectholder"
                 id='project2'
-                initial={{  scale: 0.9 }}
+                initial={{ scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
-                exit={{  scale: 0.9 }}
+                exit={{ scale: 0.9 }}
                 transition={{ duration: 0.5 }}
             >
                 <h2>Kaam Kaaj</h2>
@@ -24,7 +31,18 @@ export default function Project1() {
                     <a href="https://github.com/bhuwan1301/KaamKaaj/releases" target='_blank'>Visit Project</a>
                 </div>
 
-                <div className="photos">
+                <div className="showgallery">
+                    <button onClick={handleShowgallery}>
+                        Show Gallery
+                    </button>
+                </div>
+
+                <div
+                    className="photos"
+                    style={{
+                        display: showgallery ? 'flex' : 'none',
+                    }}
+                >
                     <img src={pic1} alt="Home page" />
                     <img src={pic2} alt="Home page" />
                     <img src={pic3} alt="Home page" />
