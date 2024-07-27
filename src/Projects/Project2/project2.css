@@ -20,6 +20,7 @@
     border: none;
     background-color: grey;
     margin-bottom: 1vh;
+    color: white;
 }
 
 .showgallery button:active{
