@@ -11,7 +11,7 @@
     background-color: #854413;
 }
 
-.showgallery button{
+#showgallerybutton1{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,8 +21,9 @@
     background-color: grey;
     margin-bottom: 1vh;
     color: white;
+    cursor: pointer;
 }
 
-.showgallery button:active{
-    background-color: rgb(83, 83, 83);
+#showgallerybutton1:active{
+    background-color: rgb(101, 101, 101);
 }

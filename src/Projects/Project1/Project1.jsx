@@ -30,13 +30,18 @@ export default function Project1() {
                 <p>You need to create an account to use NoteDown, in order to save your data. You can access your notes in any mobile device by signing in to your account.</p>
 
                 <div className="visitptojectbutton">
-                    <a href="https://github.com/bhuwan1301/NoteDown/releases" target='_blank'>Visit Project</a>
+                    <motion.a whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} href="https://github.com/bhuwan1301/NoteDown/releases" target='_blank'>Visit Project</motion.a>
                 </div>
 
                 <div className="showgallery">
-                    <button onClick={handleShowgallery}>
+                    <motion.button
+                        id='showgallerybutton1'
+                        onClick={handleShowgallery}
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 0.9 }}
+                    >
                         Show Gallery
-                    </button>
+                    </motion.button>
                 </div>
 
                 <div

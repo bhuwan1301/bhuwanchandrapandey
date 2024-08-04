@@ -28,13 +28,18 @@ export default function Project1() {
                 <p>Kaam Kaaj is a simple and efficient todo list app designed to help you manage your tasks seamlessly. Utilizing local storage, it securely saves your tasks locally. You can effortlessly add and delete tasks, while checkboxes enable easy tracking of completed tasks. Stay organized and productive with Kaam Kaaj.</p>
 
                 <div className="visitptojectbutton">
-                    <a href="https://github.com/bhuwan1301/KaamKaaj/releases" target='_blank'>Visit Project</a>
+                    <motion.a whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} href="https://github.com/bhuwan1301/KaamKaaj/releases" target='_blank'>Visit Project</motion.a>
                 </div>
 
                 <div className="showgallery">
-                    <button onClick={handleShowgallery}>
+                    <motion.button
+                        id='showgallerybutton2'
+                        onClick={handleShowgallery}
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 0.9 }}
+                    >
                         Show Gallery
-                    </button>
+                    </motion.button>
                 </div>
 
                 <div
